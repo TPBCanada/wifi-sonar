@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wi-Fi Sonar</title><link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <header><div><p class="eyebrow">SPATIAL SIGNAL LAB</p><h1>Wi-Fi Sonar</h1></div><span id="mode">CONNECTING</span></header>
+    <section class="grid">
+      <article class="map-card"><canvas id="map"></canvas><div class="legend"><span><i class="person"></i> Estimated presence</span><span><i class="anchor"></i> Receiver</span></div></article>
+      <aside>
+        <article class="metric"><label>PRESENCE</label><strong id="presence">—</strong><small id="motionText">Waiting for readings</small></article>
+        <article class="metric"><label>POSITION</label><strong id="position">—</strong><small id="confidence">Confidence —</small></article>
+        <article class="metric"><label>MOTION ENERGY</label><div class="bar"><b id="motionBar"></b></div><small>Signal variance across receivers</small></article>
+        <article class="sensors"><label>RECEIVERS</label><div id="sensors"></div></article>
+      </aside>
+    </section>
+    <footer>Privacy-first: processing stays on your local network. No camera or microphone.</footer>
+  </main><script src="/static/app.js"></script>
+</body></html>
+
